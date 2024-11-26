@@ -4,9 +4,12 @@ import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+
+const apiKey= import.meta.env.REACT_APP_FIRBASE_APIKEY
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBmg_EWN7TSI-8VmpbIfL7i_DiNpS8uicI",
+    apiKey:apiKey,
     authDomain: "task-manager-8e22f.firebaseapp.com",
     projectId: "task-manager-8e22f",
     storageBucket: "task-manager-8e22f.firebasestorage.app",
